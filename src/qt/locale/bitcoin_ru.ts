@@ -87,13 +87,13 @@ Reduce the number of addresses involved in the address creation.</source>
     </message>
     <message>
       <location filename="../multisigdialog.cpp" line="504"/>
-      <source>The fee of the transaction (%1 NVC) is smaller than the expected fee (%2 NVC). Do you want to send the transaction anyway?</source>
-      <translation>Комиссия (%1 NVC) меньше необходимой (%2 NVC). Вы хотите отправить транзакцию без изменений?</translation>
+      <source>The fee of the transaction (%1 INT) is smaller than the expected fee (%2 INT). Do you want to send the transaction anyway?</source>
+      <translation>Комиссия (%1 INT) меньше необходимой (%2 INT). Вы хотите отправить транзакцию без изменений?</translation>
     </message>
     <message>
       <location filename="../multisigdialog.cpp" line="509"/>
-      <source>The fee of the transaction (%1 NVC) is bigger than the expected fee (%2 NVC). Do you want to send the transaction anyway?</source>
-      <translation>Комиссия (%1 NVC) больше необходимой (%2 NVC). Вы хотите отправить транзакцию без изменений?</translation>
+      <source>The fee of the transaction (%1 INT) is bigger than the expected fee (%2 INT). Do you want to send the transaction anyway?</source>
+      <translation>Комиссия (%1 INT) больше необходимой (%2 INT). Вы хотите отправить транзакцию без изменений?</translation>
     </message>
     <message>
       <location filename="../forms/multisigdialog.ui" line="14"/>
@@ -449,16 +449,16 @@ Reduce the number of addresses involved in the address creation.</source>
     <translation>Количество</translation>
   </message>
   <message>
-    <source>NovaCoins</source>
-    <translation>NovaCoins</translation>
+    <source>iCoins</source>
+    <translation>iCoins</translation>
   </message>
   <message>
-    <source>Milli-NovaCoins (1 / 1,000)</source>
-    <translation>Милли-NovaCoins (1 / 1000)</translation>
+    <source>Milli-iCoins (1 / 1,000)</source>
+    <translation>Милли-iCoins (1 / 1000)</translation>
   </message>
   <message>
-    <source>Micro-NovaCoins (1 / 1,000,000)</source>
-    <translation>Микро-NovaCoins (1 / 1000000)</translation>
+    <source>Micro-iCoins (1 / 1,000,000)</source>
+    <translation>Микро-iCoins (1 / 1000000)</translation>
   </message>
   <message>
     <source>from  %1 to %2</source>
@@ -485,13 +485,13 @@ Reduce the number of addresses involved in the address creation.</source>
     <name>AboutDialog</name>
     <message>
         <location filename="../forms/aboutdialog.ui" line="+14"/>
-        <source>About NovaCoin</source>
-        <translation>О NovaCoin</translation>
+        <source>About iCoin</source>
+        <translation>О iCoin</translation>
     </message>
     <message>
         <location line="+39"/>
-        <source>&lt;b&gt;NovaCoin&lt;/b&gt; version</source>
-        <translation>&lt;b&gt;NovaCoin&lt;/b&gt; версия</translation>
+        <source>&lt;b&gt;iCoin&lt;/b&gt; version</source>
+        <translation>&lt;b&gt;iCoin&lt;/b&gt; версия</translation>
     </message>
     <message>
         <location line="+41"/>
@@ -499,12 +499,14 @@ Reduce the number of addresses involved in the address creation.</source>
 Copyright © 2011-2012 The PPCoin Developers
 Copyright © 2014 The Peerunity Developers
 Copyright © 2014 The EmerCoin Developers
-Copyright © 2012-2015 The NovaCoin developers</source>
+Copyright © 2012-2015 The NovaCoin developers
+Copyright © 2015 The iCoin developers</source>
         <translation>Все права защищены © 2009-2015 Разработчики Bitcoin
 Все права защищены © 2011-2012 Разработчики PPCoin
 Все права защищены © 2014 Разработчики Peerunity
 Все права защищены © 2014 Разработчики EmerCoin
-Все права защищены © 2012-2015 Разработчики NovaCoin</translation>
+Все права защищены © 2012-2015 Разработчики NovaCoin
+Все права защищены © 2015 Разработчики iCoin</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -541,7 +543,7 @@ Copyright © 2012-2015 The NovaCoin developers</source>
     </message>
     <message>
         <location line="-46"/>
-        <source>These are your NovaCoin addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
+        <source>These are your iCoin addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
         <translation>Это Ваши адреса для получения платежей. Вы можете дать разные адреса отправителям, чтобы отслеживать, кто именно вам платит.</translation>
     </message>
     <message>
@@ -556,8 +558,8 @@ Copyright © 2012-2015 The NovaCoin developers</source>
     </message>
     <message>
         <location line="+11"/>
-        <source>Sign a message to prove you own a NovaCoin address</source>
-        <translation>Подписать сообщение, чтобы доказать владение адресом NovaCoin</translation>
+        <source>Sign a message to prove you own a iCoin address</source>
+        <translation>Подписать сообщение, чтобы доказать владение адресом iCoin</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -571,8 +573,8 @@ Copyright © 2012-2015 The NovaCoin developers</source>
     </message>
     <message>
         <location line="-14"/>
-        <source>Verify a message to ensure it was signed with a specified NovaCoin address</source>
-        <translation>Проверить сообщение, чтобы убедиться, что оно было подписано указанным адресом NovaCoin</translation>
+        <source>Verify a message to ensure it was signed with a specified iCoin address</source>
+        <translation>Проверить сообщение, чтобы убедиться, что оно было подписано указанным адресом iCoin</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -729,7 +731,7 @@ Copyright © 2012-2015 The NovaCoin developers</source>
     </message>
     <message>
         <location line="-56"/>
-        <source>NovaCoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your coins from being stolen by malware infecting your computer.</source>
+        <source>iCoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your coins from being stolen by malware infecting your computer.</source>
         <translation>Сейчас программа закроется для завершения процесса шифрования. Помните, что шифрование вашего бумажника не может полностью защитить ваши монеты от кражи с помощью инфицирования вашего компьютера вредоносным ПО.</translation>
     </message>
     <message>
@@ -858,8 +860,8 @@ Copyright © 2012-2015 The NovaCoin developers</source>
     </message>
     <message>
         <location line="+4"/>
-        <source>Show information about NovaCoin</source>
-        <translation>Показать информацию о NovaCoin&apos;е</translation>
+        <source>Show information about iCoin</source>
+        <translation>Показать информацию о iCoin&apos;е</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -1016,13 +1018,13 @@ Some or all keys from:
     </message>
     <message>
         <location line="-58"/>
-        <source>Send coins to a NovaCoin address</source>
-        <translation>Отправить монеты на указанный адрес NovaCoin</translation>
+        <source>Send coins to a iCoin address</source>
+        <translation>Отправить монеты на указанный адрес iCoin</translation>
     </message>
     <message>
         <location line="+45"/>
-        <source>Modify configuration options for NovaCoin</source>
-        <translation>Изменить параметры конфигурации NovaCoin</translation>
+        <source>Modify configuration options for iCoin</source>
+        <translation>Изменить параметры конфигурации iCoin</translation>
     </message>
     <message>
         <location line="+14"/>
@@ -1051,13 +1053,13 @@ Some or all keys from:
     </message>
     <message>
       <location line="315"/>
-      <source>Sign messages with your Novacoin addresses to prove you own them</source>
-      <translation>Подписать сообщения вашим Novacoin адресом, чтобы доказать, что вы им владеете</translation>
+      <source>Sign messages with your Icoin addresses to prove you own them</source>
+      <translation>Подписать сообщения вашим Icoin адресом, чтобы доказать, что вы им владеете</translation>
     </message>
     <message>
       <location line="317"/>
-      <source>Verify messages to ensure they were signed with specified Novacoin addresses</source>
-      <translation>Проверить сообщения, чтобы удостовериться, что они подписаны определенным Novacoin адресом</translation>
+      <source>Verify messages to ensure they were signed with specified Icoin addresses</source>
+      <translation>Проверить сообщения, чтобы удостовериться, что они подписаны определенным Icoin адресом</translation>
     </message>
     <message>
         <location line="+6"/>
@@ -1076,8 +1078,8 @@ Some or all keys from:
     </message>
     <message>
         <location line="-186"/>
-        <source>NovaCoin</source>
-        <translation>NovaCoin</translation>
+        <source>iCoin</source>
+        <translation>iCoin</translation>
     </message>
     <message>
         <location line="+0"/>
@@ -1086,8 +1088,8 @@ Some or all keys from:
     </message>
     <message>
         <location line="+168"/>
-        <source>&amp;About NovaCoin</source>
-        <translation>&amp;О NovaCoin</translation>
+        <source>&amp;About iCoin</source>
+        <translation>&amp;О iCoin</translation>
     </message>
     <message>
         <location line="+9"/>
@@ -1128,12 +1130,12 @@ Some or all keys from:
     <message>
         <location line="+0"/>
         <location line="+60"/>
-        <source>NovaCoin client</source>
-        <translation>NovaCoin клиент</translation>
+        <source>iCoin client</source>
+        <translation>iCoin клиент</translation>
     </message>
     <message numerus="yes">
         <location line="+69"/>
-        <source>%n active connection(s) to NovaCoin network</source>
+        <source>%n active connection(s) to iCoin network</source>
         <translation>
             <numerusform>%n активное соединение с сетью</numerusform>
             <numerusform>%n активных соединений с сетью</numerusform>
@@ -1298,8 +1300,8 @@ Address: %4
     <message>
         <location line="-15"/>
         <location line="+15"/>
-        <source>URI can not be parsed! This can be caused by an invalid NovaCoin address or malformed URI parameters.</source>
-        <translation>Не удалось обработать URI! Это может быть связано с неверным адресом NovaCoin или неправильными параметрами URI.</translation>
+        <source>URI can not be parsed! This can be caused by an invalid iCoin address or malformed URI parameters.</source>
+        <translation>Не удалось обработать URI! Это может быть связано с неверным адресом iCoin или неправильными параметрами URI.</translation>
     </message>
     <message>
         <location line="+16"/>
@@ -1333,8 +1335,8 @@ Address: %4
     </message>
     <message>
         <location filename="../bitcoin.cpp" line="+109"/>
-        <source>A fatal error occurred. NovaCoin can no longer continue safely and will quit.</source>
-        <translation>Произошла неисправимая ошибка. NovaCoin не может безопасно продолжать работу и будет закрыт.</translation>
+        <source>A fatal error occurred. iCoin can no longer continue safely and will quit.</source>
+        <translation>Произошла неисправимая ошибка. iCoin не может безопасно продолжать работу и будет закрыт.</translation>
     </message>
 </context>
 <context>
@@ -1592,8 +1594,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
         <location line="+80"/>
         <location line="+86"/>
         <location line="+38"/>
-        <source>0.00 NVC</source>
-        <translation>0.00 NVC</translation>
+        <source>0.00 INT</source>
+        <translation>0.00 INT</translation>
     </message>
     <message>
         <location line="+131"/>
@@ -1685,8 +1687,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+5"/>
-        <source>The entered address &quot;%1&quot; is not a valid NovaCoin address.</source>
-        <translation>Введённый адрес &quot;%1&quot; не является правильным NovaCoin-адресом.</translation>
+        <source>The entered address &quot;%1&quot; is not a valid iCoin address.</source>
+        <translation>Введённый адрес &quot;%1&quot; не является правильным iCoin-адресом.</translation>
     </message>
     <message>
         <location line="+5"/>
@@ -1704,8 +1706,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     <message>
         <location filename="../guiutil.cpp" line="+420"/>
         <location line="+12"/>
-        <source>NovaCoin-Qt</source>
-        <translation>NovaCoin-Qt</translation>
+        <source>iCoin-Qt</source>
+        <translation>iCoin-Qt</translation>
     </message>
     <message>
         <location line="-12"/>
@@ -1772,13 +1774,13 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+31"/>
-        <source>Automatically start NovaCoin after logging in to the system.</source>
-        <translation>Автоматически запускать NovaCoin после входа в систему</translation>
+        <source>Automatically start iCoin after logging in to the system.</source>
+        <translation>Автоматически запускать iCoin после входа в систему</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>&amp;Start NovaCoin on system login</source>
-        <translation>&amp;Запускать NovaCoin при входе в систему</translation>
+        <source>&amp;Start iCoin on system login</source>
+        <translation>&amp;Запускать iCoin при входе в систему</translation>
     </message>
     <message>
         <location line="+7"/>
@@ -1797,8 +1799,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+6"/>
-        <source>Automatically open the NovaCoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Автоматически открыть порт для NovaCoin-клиента на роутере. Работает только если Ваш роутер поддерживает UPnP, и данная функция включена.</translation>
+        <source>Automatically open the iCoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Автоматически открыть порт для iCoin-клиента на роутере. Работает только если Ваш роутер поддерживает UPnP, и данная функция включена.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1807,8 +1809,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+7"/>
-        <source>Connect to the NovaCoin network through a SOCKS proxy (e.g. when connecting through Tor).</source>
-        <translation>Подключаться к сети NovaCoin через прокси SOCKS (например, при подключении через Tor).</translation>
+        <source>Connect to the iCoin network through a SOCKS proxy (e.g. when connecting through Tor).</source>
+        <translation>Подключаться к сети iCoin через прокси SOCKS (например, при подключении через Tor).</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1882,8 +1884,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+13"/>
-        <source>The user interface language can be set here. This setting will take effect after restarting NovaCoin.</source>
-        <translation>Здесь можно выбрать язык интерфейса. Настройки вступят в силу после перезапуска NovaCoin.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting iCoin.</source>
+        <translation>Здесь можно выбрать язык интерфейса. Настройки вступят в силу после перезапуска iCoin.</translation>
     </message>
     <message>
         <location line="+11"/>
@@ -1897,8 +1899,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+9"/>
-        <source>Whether to show NovaCoin addresses in the transaction list or not.</source>
-        <translation>Показывать ли адреса NovaCoin в списке транзакций.</translation>
+        <source>Whether to show iCoin addresses in the transaction list or not.</source>
+        <translation>Показывать ли адреса iCoin в списке транзакций.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1920,8 +1922,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
         <translation>Сторонние URL транзакций</translation>
     </message>
     <message>
-        <source>Third party URLs (e.g. explorer.novaco.in) that appear in the transactions tab as context menu items. %s in the URL is replaced by transaction hash. Multiple URLs are separated by vertical bar |.</source>
-        <translation>Сторонние URL (например explorer.novaco.in), которые отображаются на вкладке транзакций как пункты контекстного меню. %s в URL заменяется хешем транзакции. URL отделяются друг от друга вертикальной чертой |.</translation>
+        <source>Third party URLs (e.g. explorer.coinline.org) that appear in the transactions tab as context menu items. %s in the URL is replaced by transaction hash. Multiple URLs are separated by vertical bar |.</source>
+        <translation>Сторонние URL (например explorer.coinline.org), которые отображаются на вкладке транзакций как пункты контекстного меню. %s в URL заменяется хешем транзакции. URL отделяются друг от друга вертикальной чертой |.</translation>
     </message>
     <message>
         <location line="+71"/>
@@ -1952,8 +1954,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     <message>
         <location line="-9"/>
         <location line="+9"/>
-        <source>This setting will take effect after restarting NovaCoin.</source>
-        <translation>Эта настройка вступит в силу после перезапуска NovaCoin</translation>
+        <source>This setting will take effect after restarting iCoin.</source>
+        <translation>Эта настройка вступит в силу после перезапуска iCoin</translation>
     </message>
     <message>
         <location line="+29"/>
@@ -1971,8 +1973,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     <message>
         <location line="+33"/>
         <location line="+212"/>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the NovaCoin network after a connection is established, but this process has not completed yet.</source>
-        <translation>Отображаемая информация может быть устаревшей. Ваш бумажник автоматически синхронизируется с сетью NovaCoin после подключения, но этот процесс пока не завершён.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the iCoin network after a connection is established, but this process has not completed yet.</source>
+        <translation>Отображаемая информация может быть устаревшей. Ваш бумажник автоматически синхронизируется с сетью iCoin после подключения, но этот процесс пока не завершён.</translation>
     </message>
     <message>
         <location line="-170"/>
@@ -2243,8 +2245,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+7"/>
-        <source>Show the NovaCoin-Qt help message to get a list with possible NovaCoin command-line options.</source>
-        <translation>Показать помощь по NovaCoin-Qt, чтобы получить список доступных параметров командной строки.</translation>
+        <source>Show the iCoin-Qt help message to get a list with possible iCoin command-line options.</source>
+        <translation>Показать помощь по iCoin-Qt, чтобы получить список доступных параметров командной строки.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -2263,13 +2265,13 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="-104"/>
-        <source>NovaCoin - Debug window</source>
-        <translation>NovaCoin - Окно отладки</translation>
+        <source>iCoin - Debug window</source>
+        <translation>iCoin - Окно отладки</translation>
     </message>
     <message>
         <location line="+25"/>
-        <source>NovaCoin Core</source>
-        <translation>Ядро NovaCoin</translation>
+        <source>iCoin Core</source>
+        <translation>Ядро iCoin</translation>
     </message>
     <message>
         <location line="+279"/>
@@ -2278,8 +2280,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+7"/>
-        <source>Open the NovaCoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Открыть отладочный лог-файл NovaCoin из текущего каталога данных. Это может занять несколько секунд для больших лог-файлов.</translation>
+        <source>Open the iCoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Открыть отладочный лог-файл iCoin из текущего каталога данных. Это может занять несколько секунд для больших лог-файлов.</translation>
     </message>
     <message>
         <location line="+102"/>
@@ -2288,8 +2290,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location filename="../rpcconsole.cpp" line="-33"/>
-        <source>Welcome to the NovaCoin RPC console.</source>
-        <translation>Добро пожаловать в RPC-консоль NovaCoin.</translation>
+        <source>Welcome to the iCoin RPC console.</source>
+        <translation>Добро пожаловать в RPC-консоль iCoin.</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2372,8 +2374,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
         <location line="+86"/>
         <location line="+86"/>
         <location line="+32"/>
-        <source>0.00 NVC</source>
-        <translation>0.00 NVC</translation>
+        <source>0.00 INT</source>
+        <translation>0.00 INT</translation>
     </message>
     <message>
         <location line="-191"/>
@@ -2427,8 +2429,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location filename="../sendcoinsdialog.cpp" line="-173"/>
-        <source>Enter a NovaCoin address (e.g. 4Zo1ga6xuKuQ7JV7M9rGDoxdbYwV5zgQJ5)</source>
-        <translation>Введите NovaCoin-адрес (например 4Zo1ga6xuKuQ7JV7M9rGDoxdbYwV5zgQJ5)</translation>
+        <source>Enter a iCoin address (e.g. 7imPNBErNUq1TUx7iU1qHEJptJuxuVoFiW)</source>
+        <translation>Введите iCoin-адрес (например 7imPNBErNUq1TUx7iU1qHEJptJuxuVoFiW)</translation>
     </message>
     <message>
         <location filename="../forms/sendcoinsdialog.ui" line="+129"/>
@@ -2601,8 +2603,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+18"/>
-        <source>The address to send the payment to  (e.g. 4Zo1ga6xuKuQ7JV7M9rGDoxdbYwV5zgQJ5)</source>
-        <translation>Адрес получателя платежа (например 4Zo1ga6xuKuQ7JV7M9rGDoxdbYwV5zgQJ5)</translation>
+        <source>The address to send the payment to  (e.g. 7imPNBErNUq1TUx7iU1qHEJptJuxuVoFiW)</source>
+        <translation>Адрес получателя платежа (например 7imPNBErNUq1TUx7iU1qHEJptJuxuVoFiW)</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -2631,8 +2633,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location filename="../sendcoinsentry.cpp" line="+1"/>
-        <source>Enter a NovaCoin address (e.g. 4Zo1ga6xuKuQ7JV7M9rGDoxdbYwV5zgQJ5)</source>
-        <translation>Введите NovaCoin-адрес (например 4Zo1ga6xuKuQ7JV7M9rGDoxdbYwV5zgQJ5)</translation>
+        <source>Enter a iCoin address (e.g. 7imPNBErNUq1TUx7iU1qHEJptJuxuVoFiW)</source>
+        <translation>Введите iCoin-адрес (например 7imPNBErNUq1TUx7iU1qHEJptJuxuVoFiW)</translation>
     </message>
 </context>
 <context>
@@ -2655,8 +2657,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+18"/>
-        <source>The address to sign the message with (e.g. 4Zo1ga6xuKuQ7JV7M9rGDoxdbYwV5zgQJ5)</source>
-        <translation>Адрес, которым вы хотите подписать сообщение  (напр. 4Zo1ga6xuKuQ7JV7M9rGDoxdbYwV5zgQJ5)</translation>
+        <source>The address to sign the message with (e.g. 7imPNBErNUq1TUx7iU1qHEJptJuxuVoFiW)</source>
+        <translation>Адрес, которым вы хотите подписать сообщение  (напр. 7imPNBErNUq1TUx7iU1qHEJptJuxuVoFiW)</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -2692,8 +2694,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+21"/>
-        <source>Sign the message to prove you own this NovaCoin address</source>
-        <translation>Подписать сообщение, чтобы доказать владение адресом NovaCoin</translation>
+        <source>Sign the message to prove you own this iCoin address</source>
+        <translation>Подписать сообщение, чтобы доказать владение адресом iCoin</translation>
     </message>
     <message>
         <location line="+17"/>
@@ -2719,13 +2721,13 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+21"/>
-        <source>The address the message was signed with (e.g. 4Zo1ga6xuKuQ7JV7M9rGDoxdbYwV5zgQJ5)</source>
-        <translation>Адрес, которым было подписано сообщение (напр. 4Zo1ga6xuKuQ7JV7M9rGDoxdbYwV5zgQJ5)</translation>
+        <source>The address the message was signed with (e.g. 7imPNBErNUq1TUx7iU1qHEJptJuxuVoFiW)</source>
+        <translation>Адрес, которым было подписано сообщение (напр. 7imPNBErNUq1TUx7iU1qHEJptJuxuVoFiW)</translation>
     </message>
     <message>
         <location line="+40"/>
-        <source>Verify the message to ensure it was signed with the specified NovaCoin address</source>
-        <translation>Проверить сообщение, чтобы убедиться, что оно было подписано указанным адресом NovaCoin</translation>
+        <source>Verify the message to ensure it was signed with the specified iCoin address</source>
+        <translation>Проверить сообщение, чтобы убедиться, что оно было подписано указанным адресом iCoin</translation>
     </message>
     <message>
         <location line="+17"/>
@@ -2735,8 +2737,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     <message>
         <location filename="../signverifymessagedialog.cpp" line="+27"/>
         <location line="+3"/>
-        <source>Enter a NovaCoin address (e.g. 4Zo1ga6xuKuQ7JV7M9rGDoxdbYwV5zgQJ5)</source>
-        <translation>Введите адрес NovaCoin (напр. 4Zo1ga6xuKuQ7JV7M9rGDoxdbYwV5zgQJ5)</translation>
+        <source>Enter a iCoin address (e.g. 7imPNBErNUq1TUx7iU1qHEJptJuxuVoFiW)</source>
+        <translation>Введите адрес iCoin (напр. 7imPNBErNUq1TUx7iU1qHEJptJuxuVoFiW)</translation>
     </message>
     <message>
         <location line="-2"/>
@@ -2745,8 +2747,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+3"/>
-        <source>Enter NovaCoin signature</source>
-        <translation>Введите подпись NovaCoin</translation>
+        <source>Enter iCoin signature</source>
+        <translation>Введите подпись iCoin</translation>
     </message>
     <message>
         <location line="+82"/>
@@ -3333,7 +3335,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     <name>bitcoin-core</name>
     <message>
         <location filename="../bitcoinstrings.cpp" line="+124"/>
-        <source>NovaCoin version</source>
+        <source>iCoin version</source>
         <translation>Версия</translation>
     </message>
     <message>
@@ -3363,13 +3365,13 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+23"/>
-        <source>Specify configuration file (default: novacoin.conf)</source>
-        <translation>Указать конфигурационный файл (по умолчанию: novacoin.conf)</translation>
+        <source>Specify configuration file (default: icoin.conf)</source>
+        <translation>Указать конфигурационный файл (по умолчанию: icoin.conf)</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Specify pid file (default: novacoind.pid)</source>
-        <translation>Указать pid-файл (по умолчанию: novacoin.pid)</translation>
+        <source>Specify pid file (default: icoind.pid)</source>
+        <translation>Указать pid-файл (по умолчанию: icoin.pid)</translation>
     </message>
     <message>
         <source>Specify wallet file (within data directory)</source>
@@ -3392,8 +3394,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="-28"/>
-        <source>Listen for connections on &lt;port&gt; (default: 7777 or testnet: 17777)</source>
-        <translation>Принимать входящие подключения на &lt;port&gt; (по умолчанию: 7777 или 17777 в тестовой сети)</translation>
+        <source>Listen for connections on &lt;port&gt; (default: 42177 or testnet: 52177)</source>
+        <translation>Принимать входящие подключения на &lt;port&gt; (по умолчанию: 42177 или 52177 в тестовой сети)</translation>
     </message>
     <message>
         <location line="+4"/>
@@ -3457,8 +3459,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+5"/>
-        <source>Listen for JSON-RPC connections on &lt;port&gt; (default: 8344 or testnet: 18344)</source>
-        <translation>Прослушивать подключения JSON-RPC на &lt;порту&gt; (по умолчанию: 8344 или для testnet: 18344)</translation>
+        <source>Listen for JSON-RPC connections on &lt;port&gt; (default: 42144 or testnet: 52144)</source>
+        <translation>Прослушивать подключения JSON-RPC на &lt;порту&gt; (по умолчанию: 42144 или для testnet: 52144)</translation>
     </message>
     <message>
         <location line="+16"/>
@@ -3540,8 +3542,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+3"/>
-        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong NovaCoin will not work properly.</source>
-        <translation>Внимание: убедитесь, что дата и время на Вашем компьютере выставлены верно. Если Ваши часы идут неправильно, NovaCoin будет работать некорректно.</translation>
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong iCoin will not work properly.</source>
+        <translation>Внимание: убедитесь, что дата и время на Вашем компьютере выставлены верно. Если Ваши часы идут неправильно, iCoin будет работать некорректно.</translation>
     </message>
     <message>
         <location line="+22"/>
@@ -3626,8 +3628,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+1"/>
-        <source>Send command to -server or novacoind</source>
-        <translation type="unfinished">Отправить команду на -server или novacoind</translation>
+        <source>Send command to -server or icoind</source>
+        <translation type="unfinished">Отправить команду на -server или icoind</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -3806,13 +3808,13 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="-129"/>
-        <source>Cannot obtain a lock on data directory %s.  NovaCoin is probably already running.</source>
-        <translation>Невозможно установить блокировку на рабочую директорию %s.  Возможно, NovaCoin уже запущен.</translation>
+        <source>Cannot obtain a lock on data directory %s.  iCoin is probably already running.</source>
+        <translation>Невозможно установить блокировку на рабочую директорию %s.  Возможно, iCoin уже запущен.</translation>
     </message>
     <message>
         <location line="+99"/>
-        <source>NovaCoin</source>
-        <translation>NovaCoin</translation>
+        <source>iCoin</source>
+        <translation>iCoin</translation>
     </message>
     <message>
         <location line="+33"/>
@@ -3846,13 +3848,13 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+1"/>
-        <source>Error loading wallet.dat: Wallet requires newer version of NovaCoin</source>
-        <translation>Ошибка загрузки wallet.dat: бумажник требует более новую версию NovaCoin</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of iCoin</source>
+        <translation>Ошибка загрузки wallet.dat: бумажник требует более новую версию iCoin</translation>
     </message>
     <message>
         <location line="+76"/>
-        <source>Wallet needed to be rewritten: restart NovaCoin to complete</source>
-        <translation>Необходимо перезаписать бумажник, перезапустите NovaCoin для завершения операции.</translation>
+        <source>Wallet needed to be rewritten: restart iCoin to complete</source>
+        <translation>Необходимо перезаписать бумажник, перезапустите iCoin для завершения операции.</translation>
     </message>
     <message>
         <location line="-78"/>
@@ -3921,8 +3923,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="-22"/>
-        <source>Unable to bind to %s on this computer. NovaCoin is probably already running.</source>
-        <translation>Невозможно привязаться к %s на этом компьютере.  Возможно, NovaCoin уже работает.</translation>
+        <source>Unable to bind to %s on this computer. iCoin is probably already running.</source>
+        <translation>Невозможно привязаться к %s на этом компьютере.  Возможно, iCoin уже работает.</translation>
     </message>
     <message>
         <location line="+49"/>

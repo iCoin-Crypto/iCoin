@@ -1,4 +1,4 @@
-Novacoin-qt: Qt4 GUI for Novacoin
+Icoin-qt: Qt4 GUI for Icoin
 ===============================
 
 Build instructions
@@ -35,9 +35,9 @@ then execute the following:
     qmake
     make
 
-Alternatively, install Qt Creator and open the `novacoin-qt.pro` file.
+Alternatively, install Qt Creator and open the `icoin-qt.pro` file.
 
-An executable named `novacoin-qt` will be built.
+An executable named `icoin-qt` will be built.
 
 
 Windows
@@ -121,7 +121,7 @@ No additional external dependencies required. Note that only x86, x86_64 and ARM
 UPNnP port forwarding
 ---------------------
 
-To use UPnP for port forwarding behind a NAT router (recommended, as more connections overall allow for a faster and more stable novacoin experience), pass the following argument to qmake:
+To use UPnP for port forwarding behind a NAT router (recommended, as more connections overall allow for a faster and more stable icoin experience), pass the following argument to qmake:
 
 ::
 
@@ -169,9 +169,9 @@ flag to qmake to control this:
 Berkely DB version warning
 ==========================
 
-A warning for people using the *static binary* version of Novacoin on a Linux/UNIX-ish system (tl;dr: **Berkely DB databases are not forward compatible**).
+A warning for people using the *static binary* version of Icoin on a Linux/UNIX-ish system (tl;dr: **Berkely DB databases are not forward compatible**).
 
-The static binary version of Novacoin is linked against libdb5.3.
+The static binary version of Icoin is linked against libdb5.3.
 
 If the globally installed development package of Berkely DB installed on your system is 5.X, for example, any source you
 build yourself will be linked against that. The first time you run with a 5.X version the database will be upgraded,
@@ -182,7 +182,7 @@ Ubuntu 11.10 warning
 ====================
 
 Ubuntu 11.10 has a package called 'qt-at-spi' installed by default.  At the time of writing, having that package
-installed causes novacoin-qt to crash intermittently.  The issue has been reported as `launchpad bug 857790`_, but
+installed causes icoin-qt to crash intermittently.  The issue has been reported as `launchpad bug 857790`_, but
 isn't yet fixed.
 
 Until the bug is fixed, you can remove the qt-at-spi package to work around the problem, though this will presumably

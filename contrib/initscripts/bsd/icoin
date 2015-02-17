@@ -1,0 +1,68 @@
+#!/bin/sh
+
+# PROVIDE: icoin
+# REQUIRE: LOGIN
+# KEYWORD: shutdown
+
+#
+# Add the following lines to /etc/rc.conf.local or /etc/rc.conf
+# to enable this service:
+#
+# icoin_enable (bool): Set to NO by default. Set this variable to YES if you want to enable icoin service.
+# icoin_config (path): Set to /usr/local/etc/icoin.conf by default.
+# icoin_user:  The user account icoin daemon runs as. It uses 'root' user by default.
+# icoin_group: The group account icoin daemon runs as. It uses 'wheel' group by default.
+# icoin_datadir (str): Default to "/var/db/icoin". Base data directory.
+
+. /etc/rc.subr
+
+name=icoin
+rcvar=icoin_enable
+
+: ${icoin_enable:=NO}
+: ${icoin_config=/usr/local/etc/icoin.conf}
+: ${icoin_datadir=/var/db/icoin}
+: ${icoin_user="root"}
+: ${icoin_group="wheel"}
+
+required_files=${icoin_config}
+command=/usr/local/bin/icoind
+icoin_chdir=${icoin_datadir}
+pidfile="${icoin_datadir}/icoind.pid"
+stop_cmd=icoin_stop
+command_args="-conf=${icoin_config} -datadir=${icoin_datadir} -noupnp -daemon -pid=${pidfile}"
+start_precmd="${name}_prestart"
+
+icoin_create_datadir()
+{
+	echo "Creating data directory"
+	eval mkdir -p ${icoin_datadir}
+	[ $? -eq 0 ] && chown -R ${icoin_user}:${icoin_group} ${icoin_datadir}
+}
+
+icoin_prestart()
+{
+	if [ ! -d "${icoin_datadir}/." ]; then
+		icoin_create_datadir || return 1
+	fi
+}
+
+icoin_requirepidfile()
+{
+	if [ ! "0`check_pidfile ${pidfile} ${command}`" -gt 1 ]; then
+		echo "${name} not running? (check $pidfile)."
+		exit 1
+	fi
+}
+
+icoin_stop()
+{
+    icoin_requirepidfile
+
+	echo "Stopping ${name}."
+	eval ${command} -conf=${icoin_config} -datadir=${icoin_datadir} stop
+	wait_for_pids ${rc_pid}
+}
+
+load_rc_config $name
+run_rc_command "$1"

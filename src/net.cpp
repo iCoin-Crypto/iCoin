@@ -322,7 +322,7 @@ bool GetMyExternalIP(CNetAddr& ipRet)
 void ThreadGetMyExternalIP(void* parg)
 {
     // Make this thread recognisable as the external IP detection thread
-    RenameThread("novacoin-ext-ip");
+    RenameThread("icoin-ext-ip");
 
     CNetAddr addrLocalHost;
     if (GetMyExternalIP(addrLocalHost))
@@ -583,7 +583,7 @@ void CNode::copyStats(CNodeStats &stats)
 void ThreadSocketHandler(void* parg)
 {
     // Make this thread recognisable as the networking thread
-    RenameThread("novacoin-net");
+    RenameThread("icoin-net");
 
     try
     {
@@ -946,7 +946,7 @@ void ThreadSocketHandler2(void* parg)
 void ThreadMapPort(void* parg)
 {
     // Make this thread recognisable as the UPnP thread
-    RenameThread("novacoin-UPnP");
+    RenameThread("icoin-UPnP");
 
     try
     {
@@ -1007,7 +1007,7 @@ void ThreadMapPort2(void* parg)
             }
         }
 
-        string strDesc = "NovaCoin " + FormatFullVersion();
+        string strDesc = "iCoin " + FormatFullVersion();
 #ifndef UPNPDISCOVER_SUCCESS
         /* miniupnpc 1.5 */
         r = UPNP_AddPortMapping(urls.controlURL, data.first.servicetype,
@@ -1097,17 +1097,16 @@ void MapPort()
 // The first name is used as information source for addrman.
 // The second name should resolve to a list of seed addresses.
 static const char *strDNSSeed[][2] = {
-    {"novacoin.karelia.pro", "dnsseed.novacoin.karelia.pro"},
-    {"novacoin.su", "dnsseed.novacoin.su"},
-    {"novacoin.ru", "dnsseed.novacoin.ru"},
-    {"novacoin.ru", "testseed.novacoin.ru"},
-    {"novaco.in", "dnsseed.novaco.in"},
+    {"coinline.org", "seed1.coinline.org"},
+    {"coinline.org", "seed2.coinline.org"},
+    {"coinline.org", "seed3.coinline.org"},
+    {"coinline.org", "seed4.coinline.org"},
 };
 
 void ThreadDNSAddressSeed(void* parg)
 {
     // Make this thread recognisable as the DNS seeding thread
-    RenameThread("novacoin-dnsseed");
+    RenameThread("icoin-dnsseed");
 
     try
     {
@@ -1159,52 +1158,14 @@ void ThreadDNSAddressSeed2(void* parg)
     printf("%d addresses found from DNS seeds\n", found);
 }
 
-
-
-
-
-
-
-
-
-
-
-
 uint32_t pnSeed[] =
 {
-    0xa52bf0da, 0x30aa43d8, 0x614488d5, 0x517b6fd5, 0xd4bf62d4, 0xb7d638d4, 0xbc12bcd1, 0xa2501bc6,
-    0xfde617c6, 0x3337b1c6, 0x1dcd71c3, 0x2c1544c1, 0xe05f6ac1, 0x852f63c0, 0x3e2363c0, 0x15f563c0,
-    0x430d63c0, 0x50d6a9c0, 0xf0a679c0, 0xefdeedbf, 0x7aaee8bc, 0x3a3dbbbc, 0xef218abc, 0x0bef78bc,
-    0x8baa3eb2, 0x2bf913b2, 0x24ed9fb2, 0xb42289b2, 0x718a09b0, 0xe9433eb0, 0x559425b0, 0xc97e1fb0,
-    0x18e1d4b0, 0x8f6cc1b0, 0xac3838ae, 0x86c0ffad, 0x6b0272a7, 0xa463f8a2, 0x6f17f3a2, 0xb3d6f3a2,
-    0x9cd8f997, 0xd513fb94, 0x39e64880, 0x3859dd6f, 0x0b08fe6d, 0xe601fe6d, 0xeb44a26d, 0xfe53186c,
-    0x203c2e68, 0x1c542868, 0x0caa8368, 0xb8748368, 0xccca4762, 0xc637555f, 0x638a545f, 0x59b2205f,
-    0x52568c5f, 0xba568c5f, 0x8a568c5f, 0x31b0f45e, 0x54a0f45e, 0x37d6f15e, 0xc520175e, 0x7620175e,
-    0xc310175e, 0x8e33b45e, 0x7abb5f5d, 0xd3014c5d, 0xa1e1485d, 0x9947645d, 0xfab8ff5c, 0xa979e65b,
-    0xa879e65b, 0x9f79e65b, 0x9fa3d25b, 0x112a925b, 0x7b92905b, 0x60647a5b, 0x1e389d5a, 0x851afa59,
-    0x0185ef59, 0x26549b59, 0x1c9efe57, 0xc54c1256, 0x1ad51955, 0x19d21955, 0x73c41955, 0x3f74ee55,
-    0x633eea55, 0x6883d655, 0xfb72c655, 0x5360a653, 0x17c1ea52, 0xc661c852, 0x1ecdc852, 0x006a9752,
-    0xf72d9252, 0x82650551, 0x36f1c851, 0x33f1c851, 0xd5c1864f, 0xb6bf1b4e, 0x96da184e, 0x40d0234d,
-    0x9a96ab4c, 0x8fc2a84c, 0xb5dbd048, 0xf4644447, 0x2d51af47, 0xa9625445, 0x83f05243, 0x89672941,
-    0x3a8bad3e, 0xf0a05436, 0x6ab7c936, 0x49971d32, 0xadd4482e, 0xcffd212e, 0x6730bc2e, 0x839aa12e,
-    0x68d9692e, 0xc7183b25, 0x6c47bb25, 0x2490bb25, 0xad651c1f, 0x048a861f, 0x6937811f, 0x064b2d05,
-    0x4d226805,
+    0xd447e895, 0x2d387cd9, 0x2d385ba5, 0x42e42f1d,
 };
 
 const char* pchTorSeed[] = 
 {
-    "seedp4knqnoei57u.onion",
-    "seedr3hhlepyi7fd.onion",
-    "seed3uuomkclbiz4.onion",
-    "seedeh7qck3ouff5.onion",
-    "5rg3vq4jagckeckf.onion",
-    "seedt3sraf53ajiy.onion",
-    "seedg4qyccsg42oq.onion",
-    "novaqrtoywpg7jly.onion",
-    "seed3d5wolqbgrcb.onion",
-    "seed24u5dwph3qw4.onion",
-    "mj26ulzbs2oskgym.onion",
-    "eqon4usunavt76m7.onion",
+    "",
 };
 
 void DumpAddresses()
@@ -1234,7 +1195,7 @@ void ThreadDumpAddress2(void* parg)
 void ThreadDumpAddress(void* parg)
 {
     // Make this thread recognisable as the address dumping thread
-    RenameThread("novacoin-adrdump");
+    RenameThread("icoin-adrdump");
 
     try
     {
@@ -1249,7 +1210,7 @@ void ThreadDumpAddress(void* parg)
 void ThreadOpenConnections(void* parg)
 {
     // Make this thread recognisable as the connection opening thread
-    RenameThread("novacoin-opencon");
+    RenameThread("icoin-opencon");
 
     try
     {
@@ -1445,7 +1406,7 @@ void ThreadOpenConnections2(void* parg)
 void ThreadOpenAddedConnections(void* parg)
 {
     // Make this thread recognisable as the connection opening thread
-    RenameThread("novacoin-opencon");
+    RenameThread("icoin-opencon");
 
     try
     {
@@ -1622,7 +1583,7 @@ void static StartSync(const vector<CNode*> &vNodes) {
 void ThreadMessageHandler(void* parg)
 {
     // Make this thread recognisable as the message handling thread
-    RenameThread("novacoin-msghand");
+    RenameThread("icoin-msghand");
 
     try
     {
@@ -1797,7 +1758,7 @@ bool BindListenPort(const CService &addrBind, string& strError)
     {
         int nErr = WSAGetLastError();
         if (nErr == WSAEADDRINUSE)
-            strError = strprintf(_("Unable to bind to %s on this computer. NovaCoin is probably already running."), addrBind.ToString().c_str());
+            strError = strprintf(_("Unable to bind to %s on this computer. iCoin is probably already running."), addrBind.ToString().c_str());
         else
             strError = strprintf(_("Unable to bind to %s on this computer (bind returned error %d, %s)"), addrBind.ToString().c_str(), nErr, strerror(nErr));
         printf("%s\n", strError.c_str());
@@ -1880,7 +1841,7 @@ void static Discover()
 void StartNode(void* parg)
 {
     // Make this thread recognisable as the startup thread
-    RenameThread("novacoin-start");
+    RenameThread("icoin-start");
 
     if (semOutbound == NULL) {
         // initialize semaphore

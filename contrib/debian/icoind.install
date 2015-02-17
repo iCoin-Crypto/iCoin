@@ -1,0 +1,2 @@
+debian/bin/icoind usr/bin
+src/icoind usr/lib/icoin

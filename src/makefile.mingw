@@ -84,7 +84,7 @@ OBJS= \
     obj/pbkdf2.o \
     obj/scrypt.o
 
-all: novacoind.exe
+all: icoind.exe
 
 #
 # LevelDB support
@@ -119,11 +119,11 @@ endif
 obj/%.o: %.cpp $(HEADERS)
 	g++ -c $(CFLAGS) -o $@ $<
 
-novacoind.exe: $(OBJS:obj/%=obj/%)
+icoind.exe: $(OBJS:obj/%=obj/%)
 	g++ $(CFLAGS) $(LDFLAGS) -o $@ $(LIBPATHS) $^ $(LIBS)
 
 clean:
-	-del /Q novacoind
+	-del /Q icoind
 	-del /Q obj\*
 
 FORCE:
